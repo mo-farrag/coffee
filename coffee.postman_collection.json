@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "7ec52af0-e908-4fa7-b560-565fa0844676",
+		"name": "coffee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/machine?productType=&waterLine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"machine"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": ""
+						},
+						{
+							"key": "waterLine",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/pod?productType=COFFEE_POD_SMALL&size=3_dozen&flavor=COFFEE_FLAVOR_VANILLA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"pod"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "COFFEE_POD_SMALL"
+						},
+						{
+							"key": "size",
+							"value": "3_dozen"
+						},
+						{
+							"key": "flavor",
+							"value": "COFFEE_FLAVOR_VANILLA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All large machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/machine?productType=COFFEE_MACHINE_LARGE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"machine"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "COFFEE_MACHINE_LARGE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All large pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/pod?productType=COFFEE_POD_LARGE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"pod"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "COFFEE_POD_LARGE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All espresso vanilla pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/pod?productType=ESPRESSO_POD&flavor=COFFEE_FLAVOR_VANILLA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"pod"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "ESPRESSO_POD"
+						},
+						{
+							"key": "flavor",
+							"value": "COFFEE_FLAVOR_VANILLA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All espresso machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/machine?productType=ESPRESSO_MACHINE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"machine"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "ESPRESSO_MACHINE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All small pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/pod?productType=COFFEE_POD_SMALL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"pod"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "COFFEE_POD_SMALL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All pods sold in 7 dozen packs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffee/pod?size=7_dozen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffee",
+						"pod"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "7_dozen"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
